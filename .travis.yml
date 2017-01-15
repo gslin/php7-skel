@@ -28,7 +28,7 @@ deploy:
     secret_access_key:
       secure: "L8vQ5WRcPAR3XYW5qXjUvlNyAmpQ+baUsq/YLl1NLrVqxqRTnn0ieNuPLKtIvcKMqUacHSCOYXmL9l+SGv23ND0/pNoKEyhRBsk9xQ5qm3KUEXjYmupjO876KSAWPU9IanNbjpKcN28d7Wbp+bfkhUhkEsvADKyTNXjenmrvik+xFrmcgm8SwFiriD2ou59w5f5mo5pVcI0qJpAIY8AYWlXGy6WnGLRktldZ4kPzrNP39ioYXuBmmQ6T9HTjfFtdml3lx5fhxexoL993VxkkPxST7Yy0NhfE8geNIaPOmuxXdzrp+qR/0moCiC5Y54ZB5zzJDcj9ZobYbb6xtbPmIuFWOmTLyiNFgNpY1bqBJVx2Jhw/09cRdY9tNnWpXyeSA/NE05r51LHW4p92lLTWke8Ush4CQ3m9NA88Gtb1aFTD2EmBRteYGwGA03QZ6YxDi7b0BFWynINqihhUHXlmG989VFX26FhZcRZVaMY+PYzf7yJO3vtpp15Yt7p8uT/rYJH5Lp+nacBwg6vCwLzNmAN24HWx3P83etPFhMEB2pjFmvEm6vgk0xSoh7rTOwtr33xO8fehC90WC1NECEOL3O/AIVnvN5QKG6FQ658cyYjoXPqvTmpgcsytavrmZU31ddQLdHsWwfnkftDOwbrQm240JY8JOVl8aw43+tLL47Y="
     bucket: "codedeploy-web-test"
-    key: latest/web-test.zip
+    key: latest.zip
     application: web-test
     deployment_group: master
     region: ap-northeast-1
