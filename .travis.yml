@@ -1,12 +1,12 @@
 language: php
 os:
-    - linux
+- linux
 dist:
-    - trusty
+- trusty
 php:
-    - '7.0'
-    - '7.1'
+- '7.0'
+- '7.1'
 before_script:
-    - composer install
+- composer install
 script:
-    - phpunit
+- phpunit
