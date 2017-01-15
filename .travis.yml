@@ -12,7 +12,7 @@ script:
 - phpunit
 before_deploy:
   - zip -r latest *
-  - mkdir -f dpl_cd_upload
+  - test -d dpl_cd_upload || mkdir dpl_cd_upload
   - mv latest.zip dpl_cd_upload/latest.zip
 deploy:
   - provider: s3
