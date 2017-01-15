@@ -10,20 +10,6 @@ before_script:
 - composer install
 script:
 - phpunit
-deploy:
-- provider: s3
-  access_key_id: AKIAJ2YDIXVUU43IKMWQ
-  secret_access_key:
-    secure: pfI6FsHPBL2LtHLsHEZCI7U97hZRtxHFCx89dYb1HXSxOZm04IrK7KZTZ38e7O69vm+Q1/DTShz21hLVMgAiaPSOfcfE2nJvoNglDdTKAmmyXvy+TRUMHLIWZDQCWCsrWjDnOp/cDgTmhd9wRSSpOA0xre0Qn9+uiL+yigR5VedLw7g5WYy6TLkQU5zrvw0SrJlaMQfoYEVIzBRnXxplTOP1FrPJm3B5W87jnYtmP7RUwRea3sFhS0PSoH3HGVlSyBOoHAz+kbZRb5rS2+xQ0XajsRbFg4wEKRurspS71bmMgxxCx6gLR2zIMFEh78JNNhOAPfjX7G68t+3v2dh9fn7InY44QGtxWAjGobMY3Xc9k1ZDJushSvxxDiaPmCKTJ+pbERtCjWnGAJLiwV3ICa50J2KHszHBM+JUFXMb3a/91dA4nf3tvYSKwS3Avxz2RL2ToJga0h0/U8SgdhENPFxM8ABcVOIoXGzOlhGyXWursenyEWmEPhjfff+wOWb+J1w7e6m/ffnnYjZUCAlyRsAfQIDRa3s9P9NEKb4ZoH3Vyt7AHxxCIq8Z10kZ1xqcsTFzyFmTVfbFtrvN9FOXK4C+L7dE7hp5b9+2vMFAErBfe64LyZ+AYX/PQHnuy2+NYVNjsZ18/7iX/+dgqGU3KfZ80B+BYNBnBrWb/BCvy+8= 
-  bucket: codedeploy-web-test
-- provider: codedeploy
-  access_key_id: AKIAJ2YDIXVUU43IKMWQ
-  secret_access_key:
-    secure: pfI6FsHPBL2LtHLsHEZCI7U97hZRtxHFCx89dYb1HXSxOZm04IrK7KZTZ38e7O69vm+Q1/DTShz21hLVMgAiaPSOfcfE2nJvoNglDdTKAmmyXvy+TRUMHLIWZDQCWCsrWjDnOp/cDgTmhd9wRSSpOA0xre0Qn9+uiL+yigR5VedLw7g5WYy6TLkQU5zrvw0SrJlaMQfoYEVIzBRnXxplTOP1FrPJm3B5W87jnYtmP7RUwRea3sFhS0PSoH3HGVlSyBOoHAz+kbZRb5rS2+xQ0XajsRbFg4wEKRurspS71bmMgxxCx6gLR2zIMFEh78JNNhOAPfjX7G68t+3v2dh9fn7InY44QGtxWAjGobMY3Xc9k1ZDJushSvxxDiaPmCKTJ+pbERtCjWnGAJLiwV3ICa50J2KHszHBM+JUFXMb3a/91dA4nf3tvYSKwS3Avxz2RL2ToJga0h0/U8SgdhENPFxM8ABcVOIoXGzOlhGyXWursenyEWmEPhjfff+wOWb+J1w7e6m/ffnnYjZUCAlyRsAfQIDRa3s9P9NEKb4ZoH3Vyt7AHxxCIq8Z10kZ1xqcsTFzyFmTVfbFtrvN9FOXK4C+L7dE7hp5b9+2vMFAErBfe64LyZ+AYX/PQHnuy2+NYVNjsZ18/7iX/+dgqGU3KfZ80B+BYNBnBrWb/BCvy+8= 
-  bucket: codedeploy-web-test
-  key: latest/MyApp.zip
-  application: web-test
-  deployment_group: web-test-group
 notifications:
   email: false
   slack:
