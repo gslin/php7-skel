@@ -1,0 +1,10 @@
+{
+    "name": "gslin/php7-skel",
+    "authors": [
+        {
+            "name": "Gea-Suan Lin",
+            "email": "gslin@gslin.org"
+        }
+    ],
+    "require": {}
+}
