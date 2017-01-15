@@ -19,6 +19,7 @@ deploy:
   key: latest/web-test.zip
   application: web-test
   deployment_group: master
+  region: ap-northeast-1
   on:
     branch: master
 notifications:
